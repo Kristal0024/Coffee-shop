@@ -2,9 +2,9 @@ import React from 'react'
 import Latte from '../assets/latte.png'
 import Card from '../components/Card'
 const data=[
-  {id:1,title:"Vanilla Bean Latte", price:"560", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
-  {id:2,title:"Vanilla Bean Latte", price:"560", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
-  {id:3,title:"Vanilla Bean Latte", price:"560", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
+  {id:1,title:"Vanilla Bean Latte", price:"Rs 560", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
+  {id:2,title:"Vanilla Bean Latte", price:"Rs 560", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
+  {id:3,title:"Vanilla Bean Latte", price:"Rs 560", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
 ]
 
 const Featured = () => {
@@ -15,7 +15,7 @@ const Featured = () => {
         <h1 className='text-3xl'>Featured Favorites</h1>
             <p>Hand-picked selections from our seasonal menu, crafted to perfection.</p>
         </div>
-        <div className="cards flex gap-6">
+        <div className="cards flex justify-around">
          { data.map((e)=>(
             <Card key={e.id} {...e}/>
           ))}
