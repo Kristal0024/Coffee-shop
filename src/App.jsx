@@ -3,6 +3,7 @@ import './App.css'
 import NavBar from './pages/NavBar'
 import Home from './pages/Home'
 import Featured from './pages/Featured'
+import Story from './pages/Story'
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
         <NavBar/>
           <Home/>
           <Featured/>
+          <Story/>
       </div>
     </>
   )
