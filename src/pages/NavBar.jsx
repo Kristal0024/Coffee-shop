@@ -1,4 +1,5 @@
 import React from 'react'
+import { FiShoppingBag } from "react-icons/fi";
 
 const NavBar = () => {
   return (
@@ -13,7 +14,8 @@ const NavBar = () => {
                 <li>Contact</li>
             </ul>
         </div>
-        <div className="cart cursor-pointer">Cart</div>
+        <div className="cart cursor-pointer text-xl text-primary"><FiShoppingBag />
+</div>
     </div>
     </>
   )

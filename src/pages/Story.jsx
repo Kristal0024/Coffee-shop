@@ -1,5 +1,6 @@
 import React from "react";
 import Baristaimg from "../assets/Barista.png";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Story = () => {
   return (
@@ -18,7 +19,7 @@ const Story = () => {
               you're catching up with friends or finding a quiet corner to work,
               you belong here.
             </p>
-            <button className="text-button border-b-2">Read Our Story</button>
+            <button className="text-button border-b-2 flex items-center gap-2">Read Our Story <FaArrowRight /></button>
           </div>
         </div>
       </div>
