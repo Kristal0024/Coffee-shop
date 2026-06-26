@@ -1,19 +1,21 @@
 
 import './App.css'
-import NavBar from './pages/NavBar'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Layout from './Layout'
 import Home from './pages/Home'
-import Featured from './pages/Featured'
-import Story from './pages/Story'
-import Footer from './pages/Footer'
+import Menu from './pages/Menu'
 function App() {
   return (
     <>
       <div className="main w-full">
-        <NavBar/>
-          <Home/>
-          <Featured/>
-          <Story/>
-          <Footer/>
+        <BrowserRouter>
+<Routes>
+<Route element={<Layout/>}>
+<Route path="/" element={<Home/>}/>
+<Route path="/menu" element={<Menu/>}/>
+</Route>
+</Routes>
+</BrowserRouter>
       </div>
     </>
   )
