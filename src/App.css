@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face{
+font-family:"Railway";
+src:url("./assets/fonts/Raleway-Regular.ttf") format("truetype")
+}
+@font-face{
+font-family:"gotham";
+src:url("./assets/fonts/Gotham\ Medium.otf")
+}
 @theme{
   --color-primary: #3E2723;
   --color-secondary: #D7CCC8;
@@ -12,5 +20,7 @@
   --color-footer:#FDFBF7;
 
   --font-sans:'Inter',sans-serif;
+--font-Railway:"Railway",sans-serif;
+--font-gotham:"gotham",sans-serif;
 
 }
