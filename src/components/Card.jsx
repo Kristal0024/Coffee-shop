@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Card = ({title,desc,price,img}) => {
   return (
@@ -16,6 +17,13 @@ const Card = ({title,desc,price,img}) => {
       </div>
     </div>
   )
+}
+
+Card.propTypes={
+  title:PropTypes.string.isRequired,
+  desc:PropTypes.string.isRequired,
+  price:PropTypes.string.isRequired,
+  img:PropTypes.string.isRequired
 }
 
 export default Card
