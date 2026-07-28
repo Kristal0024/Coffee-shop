@@ -3,7 +3,8 @@ import MenuCard from '../components/MenuCard'
 const data=[
 {
 title:"Espresso",
-items:[{name:"Espresso",price:"Rs 550"},{name:"Double Espresso",price:"Rs 750"},
+items:[{name:"Espresso",price:"Rs 550"},
+  {name:"Double Espresso",price:"Rs 750"},
 {name:"Americano",price:"Rs 550"}]
 },
 {

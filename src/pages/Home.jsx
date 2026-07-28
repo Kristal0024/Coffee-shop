@@ -2,9 +2,9 @@ import coffeeImg from "../assets/coffeeImg.jpg";
 import Baristaimg from "../assets/Barista.png";
 import { FaArrowRight } from "react-icons/fa6";
 const data=[
-  {id:1,title:"Vanilla Bean Latte", price:"Rs 560", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
+  {id:1,title:"Cappuccino", price:"Rs 550", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
   {id:2,title:"Vanilla Bean Latte", price:"Rs 560", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
-  {id:3,title:"Vanilla Bean Latte", price:"Rs 560", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
+  {id:3,title:"Espresso", price:"Rs 560", desc:"smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",img:Latte},
 ]
 import Latte from '../assets/latte.png'
 import Card from '../components/Card'

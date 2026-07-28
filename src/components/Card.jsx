@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {useCart} from '../context/CartContext'
 
-const Card = ({title,desc,price,img}) => {
+const Card = ({id,title,desc,price,img}) => {
+  const{ addToCart}=useCart()
   return (
     <div>
       <div className="border-2 border-secondary w-94 h-98 rounded-3xl">
@@ -12,7 +14,7 @@ const Card = ({title,desc,price,img}) => {
         <span className='text-button text-lg'>{price}</span>
         </div>
         <p className='mb-4 text-sm text-p'>{desc}</p>
-       <button className=' w-full p-3 rounded-xl bg-secondary cursor-pointer'>+ Add to Order</button>
+       <button onClick={()=>addToCart({id,title,price,img})} className=' w-full p-3 rounded-xl bg-secondary cursor-pointer'>+ Add to Order</button>
        </div>
       </div>
     </div>
@@ -20,6 +22,7 @@ const Card = ({title,desc,price,img}) => {
 }
 
 Card.propTypes={
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   title:PropTypes.string.isRequired,
   desc:PropTypes.string.isRequired,
   price:PropTypes.string.isRequired,
