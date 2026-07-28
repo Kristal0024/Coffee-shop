@@ -27,24 +27,34 @@ const Cart=()=>{
                 {cart.map((items,index)=>{
                     return (
                         <div key={index} className="border w-[792px] h-[227px]">
-                            <span className="flex justify-between p-2 border-b">
+                            {/* grid head */}
+                            <div className="grid grid-cols-[2fr_1fr_1fr] p-2 border-b">
                                 <p>Item</p>
-                                <p className="ml-60">Quantity</p>
-                                <p>Total</p>
-                            </span>
-                            <div className="showItems p-5">
-                                <span className="flex gap-3 items-center">
+                                <p className="text-center">Quantity</p>
+                                <p className="text-right">Total</p>
+                            </div>
+                            {/* grid body */}
+                            <div className="showItems grid grid-cols-[2fr_1fr_1fr] items-center p-5">
+                                {/* column 1: */}
+                                <div className="flex gap-4 items-center">
                                     <img src={items.img} alt={items.title} className="w-55 h-35" />
                                     <span>
                                         <p>{items.title}</p>
                                     <p>{items.price}</p>
                                     </span>
-                                    <span className="border flex gap-3 items-center p-1 ml-21">
-                                        <FaMinus className="cursor-pointer" />
-                                        <p className="cursor-none">{items.quantity || 1}</p>
+                                     </div>
+                                    {/* column 2: */}
+                                    <div className="flex justify-center">
+                                        <span className="border flex gap-4 items-center p-2">
+                                            <FaMinus className="cursor-pointer" />
+                                        <p className="cursor-none text-center">{items.quantity || 1}</p>
                                         <FaPlus className="cursor-pointer" />
-                                    </span>
-                                </span>
+                                        </span>
+                                    </div>
+                                    {/* column 3: */}
+                                    <div className="text-right">
+                                        <p>{items.price}</p>
+                                    </div>
                             </div>
                         </div>
                     );

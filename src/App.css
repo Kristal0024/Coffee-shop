@@ -9,8 +9,8 @@ font-family:"gotham";
 src:url("./assets/fonts/Gotham\ Medium.otf")
 }
 @theme{
-  --color-primary: #3E2723;
-  --color-secondary: #D7CCC8;
+  --color-primary:#3E2723;
+  --color-secondary:#D7CCC8;
   --color-text:#FDFBF7;
   --color-background:#ffffff;
   --color-overlay:#000000;

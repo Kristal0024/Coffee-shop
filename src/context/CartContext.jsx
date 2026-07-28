@@ -4,6 +4,7 @@ export const CartContext=createContext();
 
 export const CartProvider=({children})=>{
     const [cart,setCart]=useState([])
+    const [hasUnreadCard,sethasUnreadCard]=useState(false)
 
     const addToCart =(item)=>{
         setCart((prevCart)=>{
@@ -14,11 +15,11 @@ export const CartProvider=({children})=>{
             const newCart= [...prevCart,{...item,quantity:1}]
             return newCart
         })
-        console.log(item)
+        sethasUnreadCard(true)
     }
 
     return(
-    <CartContext.Provider value={{cart,setCart,addToCart}}>
+    <CartContext.Provider value={{cart,setCart,addToCart,hasUnreadCard,sethasUnreadCard}}>
         {children}
     </CartContext.Provider>
 )
