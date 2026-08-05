@@ -77,13 +77,20 @@ const Cart = () => {
           })}
           </div>
           <div className="flex flex-col border border-button w-100 h-90 shadow-[6px_6px_8px_rgba(0,0,0,0.4)]">
-            <div className="flex justify-between h-[10%] items-center border-b border-button px-4 mb-30">
-                <p>Item</p>
-                <p>{grandTotal}</p>
+            <div className="flex justify-between h-[10%] items-center border-b border-button px-4 mb-25">
+                <p>Total</p>
+                <p>Rs {grandTotal}</p>
             </div>
             <div className="flex justify-center">
-                <button>Checkout</button>
+                <button className="border w-60 p-3 font-medium bg-button text-background cursor-pointer">Checkout</button>
             </div>
+<div className="flex justify-center mt-9 mb-2">
+<p>100% Safe Payment</p>
+</div>
+<div className="image flex items-center justify-center gap-5">
+<img className="w-20" src="khalti.png" alt="" />
+<img className="w-20" src="eSewa.png" alt="" />
+</div>
           </div>
         </div>
       </div>

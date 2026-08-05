@@ -7,21 +7,21 @@ const data = [
     title: "Cappuccino",
     price: 550,
     desc: "smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",
-    img: Latte,
+    img: "cappuccino1.jpg",
   },
   {
     id: 2,
     title: "Vanilla Bean Latte",
     price: 560,
     desc: "smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",
-    img: Latte,
+    img: "lattee.jpg",
   },
   {
     id: 3,
     title: "Espresso",
     price: 560,
     desc: "smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",
-    img: Latte,
+    img: "Espresso.jpg",
   },
 ];
 import Latte from "../assets/latte.png";
