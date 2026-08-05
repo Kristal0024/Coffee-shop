@@ -11,7 +11,7 @@ const Card = ({id,title,desc,price,img}) => {
        <div className="desc p-4">
          <div className="flex justify-between mt-3 mb-1">
           <h2 className='text-var(--color-primary) text-xl'>{title}</h2>
-        <span className='text-button text-lg'>{price}</span>
+        <span className='text-button text-lg'>Rs {price}</span>
         </div>
         <p className='mb-4 text-sm text-p'>{desc}</p>
        <button onClick={()=>addToCart({id,title,price,img})} className=' w-full p-3 rounded-xl bg-secondary cursor-pointer'>+ Add to Order</button>

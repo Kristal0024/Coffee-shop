@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-between items-center text-footer">
-            <span className="opacity-[50%]">© 2023 Aura Cafe. All rights reserved.</span>
+            <span className="opacity-50">© 2023 Aura Cafe. All rights reserved.</span>
             <ul className="flex gap-1 items-center cursor-pointer">
                 <li className="mr-2"><img src={instagram} alt="instagram logo" /></li>
                 <li><img src={twitter} alt="twitter logo" /></li>
