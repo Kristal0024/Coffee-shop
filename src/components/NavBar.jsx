@@ -15,13 +15,13 @@ const NavBar = () => {
         <div className="list">
           <ul className="flex gap-5 cursor-pointer">
             <Link to="/">
-              <li>Home</li>
+              <li className="relative w-fit cursor-pointer after:absolute after:left-1/2 after:bottom-0 after:h-px after:w-0 after:-translate-x-1/2 after:bg-current after:transition-all after:duration-300 hover:after:w-full">Home</li>
             </Link>
             <Link to="/menu">
-              <li>Menu</li>
+              <li className="relative w-fit cursor-pointer after:absolute after:left-1/2 after:bottom-0 after:h-px after:w-0 after:-translate-x-1/2 after:bg-current after:transition-all after:duration-300 hover:after:w-full">Menu</li>
             </Link>
-            <li>About</li>
-            <li>Contact</li>
+            <li className="relative w-fit cursor-pointer after:absolute after:left-1/2 after:bottom-0 after:h-px after:w-0 after:-translate-x-1/2 after:bg-current after:transition-all after:duration-300 hover:after:w-full">About</li>
+            <li className="relative w-fit cursor-pointer after:absolute after:left-1/2 after:bottom-0 after:h-px after:w-0 after:-translate-x-1/2 after:bg-current after:transition-all after:duration-300 hover:after:w-full">Contact</li>
           </ul>
         </div>
         <Link to="/cart" onClick={()=>sethasUnreadCard(false)}>

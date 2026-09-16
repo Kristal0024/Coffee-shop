@@ -7,7 +7,7 @@ const data = [
     title: "Cappuccino",
     price: 550,
     desc: "smooth espresso blended with steamed milk and real Madagascar vanilla bean syrup.",
-    img: "cappuccino1.jpg",
+    img: "cappuccino.jpeg",
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ const Home = () => {
             perfection.
           </p>
         </div>
-        <div className="cards flex justify-around">
+        <div className="cards flex-col flex gap-5 w-full items-center sm:flex-row sm:justify-around flex-wrap">
           {data.map((e) => (
             <Card key={e.id} {...e} />
           ))}
@@ -67,8 +67,8 @@ const Home = () => {
       </div>
       {/* story */}
       <div>
-        <div className="p-20 w-full h-screen bg-secondary flex">
-          <div className="flex w-full items-center justify-center">
+        <div className="p-5 md:p-20 w-full h-screen bg-secondary flex">
+          <div className="flex flex-col md:flex-row w-full items-center justify-center">
             <div className="w-[45%] mr-11">
               <img
                 className="w-full rounded-2xl"
@@ -76,7 +76,7 @@ const Home = () => {
                 alt="Barista working image"
               />
             </div>
-            <div className="w-[50%]">
+            <div className="mt-10 md:mt-0 w-full md:w-[50%]">
               <h1 className="text-4xl mb-6">More Than Just Coffee</h1>
               <p className="text-lg mb-8 text-p">
                 At Aura Cafe, we believe in the power of a pause. Our space is

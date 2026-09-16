@@ -51,7 +51,7 @@ items:[
 const Menu = () => {
   return (
     <>
-<div className="menuwrapper w-[100%] xl:px-80 lg:px-70 flex flex-col">
+<div className="menuwrapper w-full xl:px-80 lg:px-70 flex flex-col">
 <h1 className='py-2 font-medium font-gotham text-xl'>Menu</h1>
 <div className="content mb-5">
 {

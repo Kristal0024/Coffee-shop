@@ -6,8 +6,8 @@ const Card = ({id,title,desc,price,img}) => {
   const{ addToCart}=useCart()
   return (
     <div>
-      <div className="border-2 border-secondary w-94 h-98 rounded-3xl">
-        <img className='rounded-t-3xl w-full h-50 object-cover' src={img} alt={title} />
+      <div className="border-2 border-secondary w-94 h-98 rounded-3xl group overflow-hidden">
+        <img className='w-full h-50 object-cover group-hover:scale-105 transition-all duration-300' src={img} alt={title} />
        <div className="desc p-4">
          <div className="flex justify-between mt-3 mb-1">
           <h2 className='text-var(--color-primary) text-xl'>{title}</h2>
